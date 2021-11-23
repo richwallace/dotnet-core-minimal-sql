@@ -15,8 +15,8 @@ namespace API.Models
         [StringLength(4000, ErrorMessage = "Description can not exceed 200 characters")]
         public string Description { get; set; }
 
-        [Required(ErrorMessage = "ADIntegrationKey must be provided")]
-        public Guid ADIntegrationKey { get; set; }
+        [Required(ErrorMessage = "ActiveDirectoryGroupId must be provided")]
+        public Guid ActiveDirectoryGroupId { get; set; }
 
         public DateTime CreatedUtcDate { get; set; }
 
