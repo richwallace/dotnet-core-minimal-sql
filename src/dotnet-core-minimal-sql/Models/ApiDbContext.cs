@@ -9,6 +9,7 @@ namespace API.Models
         public virtual DbSet<Contact> Contacts { get; set; }
         public virtual DbSet<Employee> Employees { get; set; }
         public virtual DbSet<Group> Groups { get; set; }
+        public virtual DbSet<EmployeeGroupAssoc> EmployeeGroupAssocs { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
